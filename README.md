@@ -1,1 +1,0 @@
-# taroyal.github.io
