@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang"en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  html <div class=name, course, and section number
+   Tyler Royal
+   WEB 115
+   0002
+    <script src="script.js"></script>
+</body>
+</html>
+display
+Brealfast, snack, lunch, snack & dinner <Monday-Sunday></Monday-Sunday>
+btnClickThis
+taroyal@my.waketech.edu
+document.addEventListener('DOMContentLoaded', () => {
+    const mealForm = document.getElementById('meal-form');
+    const mealName = document.getElementById('meal-name');
+    const mealIngredients = document.getElementById('meal-ingredients');
+    const mealImage = document.getElementById('meal-image');
+    const mealPlan = document.getElementById('meal-plan');
+
+    let meals = JSON.parse(localStorage.getItem('meals')) || [];
+
+    function saveMeals() {
+        localStorage.setItem('meals', JSON.stringify(meals));
+    }
+});
